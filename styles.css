@@ -1,0 +1,28 @@
+body{
+    background-image: url('stock.jpg');
+    background-size: 100vw 100vh;
+}
+.container{
+    text-align: center;   
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+input{
+    margin-top: 2rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 250px;
+    height: 40px;
+}
+
+#btn,#msg{
+    margin-top:2rem
+}
+
+#btn{
+    width: 150px;
+}
