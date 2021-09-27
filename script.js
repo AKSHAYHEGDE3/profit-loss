@@ -7,7 +7,7 @@ const msg = document.getElementById('msg')
 
 
 btn.addEventListener('click',()=>{
-    if(initialPrice.value && quantity.value && currentPrice.value){
+    if(initialPrice.value > 0 && quantity.value > 0 && currentPrice.value > 0){
         const totalInitialPrice=initialPrice.value*quantity.value
         const totalCurrentPrice=currentPrice.value*quantity.value
         if(totalInitialPrice < totalCurrentPrice){
@@ -37,6 +37,9 @@ btn.addEventListener('click',()=>{
             msg.style.fontSize='1.5rem'
         }
   } else {
-      console.log('invalid')
+    msg.innerText=`Invalid Details`
+    msg.style.color='red'
+    msg.style.backgroundColor='white'
+    msg.style.fontSize='1.5rem'
   }
 })
